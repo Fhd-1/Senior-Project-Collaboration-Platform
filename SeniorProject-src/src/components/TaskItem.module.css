@@ -1,0 +1,47 @@
+.left {
+  flex: 1;
+}
+
+.assignedTo {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: #666;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.userTag {
+  background: #eef1ff;
+  color: #3a5cff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.actions {
+  display: flex;
+  flex-shrink: 0;
+  gap: 0.75rem;
+  margin-left: auto;
+}
+
+.select {
+  padding: 0.3rem;
+  border-radius: 6px;
+}
+
+.iconBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.3rem;
+}

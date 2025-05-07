@@ -1,0 +1,67 @@
+.topbar {
+  height: 64px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1.5rem;
+  border-bottom: 1px solid #ddd;
+  font-family: system-ui, sans-serif;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.menuContainer {
+  position: relative;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.avatarLetter {
+  width: 36px;
+  height: 36px;
+  background: #3a5cff;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem;
+  z-index: 1000;
+}
+
+.dropdown button {
+  all: unset;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.dropdown button:hover {
+  background-color: #f0f0f0;
+}

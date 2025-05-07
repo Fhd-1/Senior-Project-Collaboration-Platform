@@ -1,0 +1,171 @@
+.content {
+  flex: 1;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "left center right"
+    "taskHeader taskHeader taskHeader"
+    "task task task";
+  grid-template-columns: 2fr 3fr 2fr;
+  gap: 1.5rem;
+  padding: 2rem;
+  align-items: start;
+}
+
+.headerRow {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.leftHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.backBtn {
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3a5cff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.backBtn:hover {
+  background: #eef1ff;
+}
+
+.newBtn {
+  background: #3a5cff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.newBtn:hover {
+  background: #2f4bd1;
+}
+
+.leftCard {
+  grid-area: left;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+
+.centerCard {
+  grid-area: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.rightCard {
+  grid-area: right;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.taskHeader {
+  grid-area: taskHeader;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.taskList {
+  grid-area: task;
+  background: white;
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.taskUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 0.75rem 0;
+}
+
+.taskName {
+  font-weight: 500;
+}
+
+.taskDue {
+  font-size: 0.85rem;
+  color: #666;
+  margin-left: 1rem;
+}
+
+.status {
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.todo {
+  background: #f5f5f5;
+  color: #444;
+}
+
+.in-progress {
+  background: #e0ecff;
+  color: #2563eb;
+}
+
+.done {
+  background: #d1f5d3;
+  color: #2e7d32;
+}
+
+.filterWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterIcon {
+  color: #3a5cff;
+}
+
+.filterSelect {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+}
+.addBtn {
+  background: none;
+  border: none;
+  color: #3a5cff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.memberHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}

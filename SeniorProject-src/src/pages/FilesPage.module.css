@@ -1,0 +1,192 @@
+.wrapper {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.backBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #3a5cff;
+}
+
+.backBtn:hover {
+  background: #eef1ff;
+}
+
+h2 {
+  flex-grow: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.uploadLabel {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.fileInput {
+  display: none;
+}
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.tabs button:hover {
+  background: #eef5ff;
+  color: #3a5cff;
+}
+
+.activeTab {
+  border-bottom: 3px solid #007bff;
+  color: #007bff;
+}
+
+.inactiveTab {
+  border-bottom: 3px solid transparent;
+  color: #666;
+}
+
+.contentArea {
+  margin-top: 1rem;
+}
+
+.fileTable {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fileHeader {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  font-weight: bold;
+  color: #666;
+  padding: 0.5rem 1rem;
+  background: #f4f4f4;
+  border-radius: 6px;
+}
+
+.fileRow {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 0.75rem 1rem;
+  background: #fafafa;
+  border-radius: 6px;
+  align-items: center;
+}
+
+.fileLink {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.fileLink:hover {
+  background: none;
+  color: #3346ae;
+}
+
+.statusInfo {
+  font-style: italic;
+  color: orange;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.successInfo {
+  font-style: italic;
+  color: green;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30, 30, 30, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  width: 600px;
+  max-height: 80vh;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+}
+
+.modalContent {
+  padding: 20px;
+  overflow-y: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word; /* Fix horizontal scroll */
+  height: 100%;
+}
+
+.modalActions {
+  padding: 10px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.modalActions button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.modalActions button:hover {
+  background: #0056b3;
+}

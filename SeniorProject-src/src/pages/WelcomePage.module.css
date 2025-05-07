@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: system-ui, sans-serif;
+}
+
+.leftPane {
+  flex: 1;
+  background: #f4f7ff;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #2c3e50;
+}
+
+.leftPane {
+  flex: 1;
+  background: #1e1f28;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+.tagline {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: #8ab4f8;
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.features {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+.features li {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 1.05rem;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.rightPane {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3a5cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.button:hover {
+  background: #2f4bd1;
+}
+
+.googleButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: white;
+  color: #3a5cff;
+  border: 1px solid #3a5cff;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.googleButton:hover {
+  background: #eef2ff;
+}
+
+.googleIcon {
+  margin-right: 0.5rem;
+}
+
+.linkButton {
+  background: none;
+  border: none;
+  color: #3a5cff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.error {
+  color: crimson;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.googleIcon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url("/google-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+}

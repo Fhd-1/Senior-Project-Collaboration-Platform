@@ -1,0 +1,18 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background: #f9fbfd;
+}

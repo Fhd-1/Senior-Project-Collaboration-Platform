@@ -1,0 +1,57 @@
+.wrapper {
+  padding: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.filterWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterIcon {
+  color: #3a5cff;
+}
+
+.filterSelect {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+}
+
+.taskUl {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.projectLabel {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.3rem;
+}
+.backBtn {
+  font-size: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3a5cff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.backBtn:hover {
+  background: #eef1ff;
+}
+
+.header {
+  display: flex;
+  justify-content: ;
+  align-items: center;
+  margin-bottom: 1rem;
+}
